@@ -1,0 +1,73 @@
+.contact {
+    min-height: 90vh;
+    margin-bottom: 10vh;
+    background: linear-gradient(0deg, #1A1E5E 21.53%, #0D0E3C 54.75%);
+    color: $white;
+    border-radius: 0 0 0 100px;
+    &-content {
+        padding-top: 10vh;
+        h1 {
+            font-size: $xl-size;
+        }
+    }
+}
+
+.contact-info {
+    min-height: 100vh;
+    
+
+    .container {
+        display: flex;
+
+        .steps {
+            color: $blue;
+            h2 {
+                
+                font-size: $l-size;
+                margin-bottom: 5vh;
+            }
+
+            .timeline {
+               
+                &-item {
+                     font-size: $ml-size;
+                     padding: 0 0 $ml-size $l-size;
+                     position: relative;
+
+                     &:not(:last-child) {
+                         border-left: 2px solid $blue;
+                     }
+                     
+                     h3 {
+                         font-size: $ml-size;
+                         position: relative;
+                         margin-bottom: 1rem;
+                     }
+                      @for $i from 1 to 4 {
+                             &:nth-child(#{$i})::after {
+                                 content: '#{$i}';
+                                 left: $m-size;
+                                 top: 0%;
+                                 position: absolute;
+                                 color: $blue;
+                                 font-weight: bold;
+                             }
+                      }
+                      
+                      &:before {
+                          content: url('../../images/p-contact/cercle-timeline.svg');
+                          position: absolute;
+                          left: 0;
+                          transform: translateX(-50%);
+                      }
+
+                     p {
+                         font-size: $m-size;
+                         width: 25ch;
+                         
+                     }
+                }
+            }
+        }
+    }
+}

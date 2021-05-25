@@ -1,0 +1,88 @@
+.carousel { 
+   
+    min-height: 55vh;
+    position: relative;
+    overflow: hidden;
+
+    &-container {
+        // Cet élément est invisible dans le code html et est ajouté en js
+        gap: 3rem;
+        display: flex;
+        transition: .3s;
+        transform: translate3d(0,0,0);
+          color: $white;
+        .carousel-item {
+           
+           border-radius: 10px;
+           
+           &:nth-of-type(1) {
+               background-color: $orange ;
+           }
+           &:nth-of-type(3n+4) {
+               background-color: $orange !important;
+           }
+           &:nth-of-type(2n) {
+               background-color: $blue;
+           }
+            &:nth-of-type(3n) {
+               color: $black;
+               box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+               background-color: $white;
+           }
+        }
+        .carousel-element {
+            
+            height: 300px;
+            width: 100%;
+            padding: $ml-size;
+          
+            
+
+            .carousel-info {
+                display: flex;
+                flex-direction: column;
+                
+                img {
+                    width: 40px;
+                    margin-bottom: $m-size;
+                }
+            }
+
+            .carousel-text {
+                h4 {
+                    font-size: 2rem;
+                    margin: $m-size 0;
+                }
+            }
+        }
+    }
+    
+}
+
+.carousel__next,
+.carousel__prev {
+      width: 50px;
+      height: 50px;
+      border-radius: 100px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      background-color: $white;
+      transition: .5s;
+
+      &:hover {
+          box-shadow: 0px 5px 16px rgba(0, 0, 0, 0.45);
+          transform: translateY(-3px);
+      }
+    &.disabled {
+        pointer-events: none;
+        opacity:.4;
+    
+    }
+
+
+}
+
+

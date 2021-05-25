@@ -1,0 +1,19 @@
+@import './utils/variables';
+@import './utils/divers';
+
+@import './base/typography';
+@import './base/reset';
+
+@import './components/socials';
+@import './components/buttons';
+@import './components/carousel';
+
+@import './layout/navigation';
+@import './layout/testimonials';
+@import './layout/footer';
+
+@import './pages/home';
+@import './pages/services';
+@import './pages/a-propos';
+@import './pages/contact';
+

@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+    font-family: 'Overpass', sans-serif;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.red-heading {
+    
+    font-size: $l-size;
+    margin-bottom: $ml-size;
+    color: $orange-red;
+}
+
+.white-heading {
+    
+    font-size: $l-size;
+    margin-bottom: $ml-size;
+    color: $white;
+}
+
+
+@media screen and (max-width:768px) {
+    .white-heading,
+    .red-heading {
+        font-size: $ml-size;
+    }
+}

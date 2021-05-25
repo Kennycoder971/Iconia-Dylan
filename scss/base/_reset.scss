@@ -1,0 +1,25 @@
+*::after,
+*::before,
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: $white;
+}
+
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    position: relative;
+}

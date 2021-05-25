@@ -1,0 +1,28 @@
+.socials {
+    a {
+        transition: .3s;
+        display: inline-block;
+        svg {
+            width: 25px;
+            fill: $white;
+        }
+
+        &:hover {
+            transform:rotate(30deg) ;
+        }
+    }
+}
+
+@media  screen and (max-width: 768px) {
+    .navigation {
+            .socials {
+                a {
+                    svg {
+                        fill:$orange;
+                    }
+                }
+        }
+    }
+    
+    
+}

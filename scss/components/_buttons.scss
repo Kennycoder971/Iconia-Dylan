@@ -1,0 +1,36 @@
+.btn {
+    display: inline-block;
+    cursor: pointer;
+    font-weight: bold;
+    transition: .3s;
+    font-size: 16px;
+    
+    &:active {
+        transform: scaleX(.95) translateY(3px);
+    }
+
+    &-white {
+        background-color: $white;
+        color: $orange;
+
+        &:hover {
+            color: $white;
+            background-color: $orange
+        }
+    }
+    &-orange {
+        background-color: $orange;
+        color: $white;
+
+        &:hover {
+            color: $orange;
+            background-color: $white;
+        }
+    }
+    &-round {
+        border-radius: 100px;
+        padding: .8rem 1.5rem;
+
+    }
+}
+
